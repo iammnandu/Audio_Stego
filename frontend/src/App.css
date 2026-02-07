@@ -1,0 +1,271 @@
+.page {
+  min-height: 100vh;
+  padding: 28px clamp(20px, 5vw, 64px) 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: radial-gradient(circle at top, #e0f2fe 0%, #f8fafc 45%, #ffffff 100%);
+  color: #0f172a;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  font-weight: 600;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f172a;
+  opacity: 0.75;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #0f172a 0%, #0ea5e9 50%, #14b8a6 100%);
+  color: white;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.2);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+  margin: 0;
+  max-width: 560px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-metrics {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.hero-metrics div {
+  display: grid;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.hero-card ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.3);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+}
+
+.section {
+  display: grid;
+  gap: 18px;
+}
+
+.section-header {
+  display: grid;
+  gap: 6px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.section-header p {
+  margin: 0;
+  color: #475569;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input[type="file"],
+input[type="text"],
+textarea {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  width: 100%;
+  background: #f8fafc;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.button.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.button.ghost {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
