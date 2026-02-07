@@ -102,9 +102,7 @@ Stego/
 ```
 
 ## Screenshots
-*(Place your screenshots in the `screenshots` folder and uncomment the lines below)*
 
-<!-- 
 ![Landing Page](screenshots/landing.png)
 ![Encryption](screenshots/encryption.png) 
--->
+
